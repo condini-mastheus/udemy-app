@@ -1,0 +1,7 @@
+{
+    "DATABASE" : {
+        "URI"  : "mongodb://<dbuser>:<dbpassword>@ds259865.mlab.com:59865/testing_app",
+        "USER" : "",
+        "PASS" : ""
+    }
+}
