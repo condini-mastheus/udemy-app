@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const config = require('./config');
 const setupController = require('./controllers/setup-controller');
+const apiController = require('./controllers/api-controller');
 
 const app = express();
 
@@ -16,5 +17,6 @@ mongoose.connect(config.getDbConnectionString(), {}).then(() => {}, (err) => {
 });
 
 setupController(app);
+apiController(app);
 
 app.listen(port);
